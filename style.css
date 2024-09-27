@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-image: url(./img/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+main {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212936d8;
+    border: 1px solid #f9fafb3a;
+    border-radius: 16px;
+    height: 380px;
+    width: 35%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    width: 95%;
+    margin-top: 12px;
+    padding: 8px;
+    border-bottom: 1px solid #f9fafb3a;
+}
+
+.navbar-button {
+    padding: 12px;
+    transition: all .3s ease;
+    cursor: pointer;
+    background: none;
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-button:hover {
+    background-color: #f9fafb3a;
+    color: white;
+}
+
+.navbar-button-selected {
+    background-color: #f9fafb3a;
+    color: white;
+}
+
+
+select {
+    padding: 12px;
+    transition: all .3s ease;
+    cursor: pointer;
+    background: none;
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+select:hover {
+    background-color: #f9fafb3a;
+    color: white;
+}
+
+select:focus {
+    background-color: #f9fafb3a;
+    color: white;
+    outline: none;
+}
+
+option {
+    background-color: #212936d8;
+}
+
+textarea {
+    width: 100%;
+    height: 60%;
+    padding: 16px;
+    vertical-align: top;
+    resize: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+p {
+    width: 100%;
+    height: 60%;
+    padding: 16px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.elements-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.copy-button {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 2px solid #f9fafb3a;
+    background: none;
+    cursor: pointer;
+    color: #f9fafb3a;
+    transition: all .3s ease;
+    font-size: 16px;
+}
+
+.copy-button:hover {
+    transform: translateY(-4px);
+}
+
+.copy-button2 {
+    align-self: flex-start;
+    margin-left: 40px;
+}
+
+#translateButton {
+    cursor: pointer;
+    background-color: #3762E4;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+#translateButton:hover {
+    transform: translateY(-4px);
+}
+
+@media(max-width:1024px) {
+    .main-container {
+        width: 45%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    #translateButton {
+        width: 24%;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        height: 120vh;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    main {
+        gap: 16px;
+    }
+
+    .main-container {
+        width: 55%;
+    }
+
+    .navbar-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    #translateButton {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:720px) {
+    .main-container {
+        width: 80%;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    .navbar-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    select {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #translateButton {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:375px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .navbar-button {
+        padding: 6px;
+    }
+}
+
+@media(max-width:320px) {
+    .main-container {
+        width: 95%;
+    }
+
+    .navbar-button {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    select {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #translateButton {
+        width: 28%;
+    }
+
+}
