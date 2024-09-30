@@ -273,6 +273,20 @@ p {
     }
 }
 
+@media(max-width:360px) {
+    body {
+        height: 140vh;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+
+    #translateButton {
+        width: 28%;
+    }
+}
+
 @media(max-width:320px) {
     .main-container {
         width: 95%;
@@ -295,9 +309,4 @@ p {
     p {
         font-size: 14px;
     }
-
-    #translateButton {
-        width: 28%;
-    }
-
 }
