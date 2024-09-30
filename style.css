@@ -263,6 +263,16 @@ p {
     }
 }
 
+@media (max-width: 375px) and (max-height: 667px) {
+    .main-container {
+        width: 95%;
+    }
+
+    body {
+        height: 140vh;
+    }
+}
+
 @media(max-width:320px) {
     .main-container {
         width: 95%;
